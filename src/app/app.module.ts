@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
   MatCardModule,
+  MatGridListModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -28,7 +29,8 @@ import { LearningComponent } from './learning/learning.component';
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
