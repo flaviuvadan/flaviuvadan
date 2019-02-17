@@ -1,0 +1,11 @@
+mat-toolbar {
+  height: 150px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 40px;
+    padding: 10px;
+  }
+}
