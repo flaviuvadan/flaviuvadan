@@ -4,3 +4,10 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
 }
+
+mat-card {
+  border-radius: 0;
+  margin: 2em;
+  box-shadow: 1px 1px 1px 1px darkgrey;
+  max-width: 400px;
+}
