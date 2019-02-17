@@ -1,0 +1,21 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  
+  .logo {
+    width: 100px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+
+    .mat-button {
+      font-size: 15px;
+      background-color: transparent;
+    }
+  }
+}
