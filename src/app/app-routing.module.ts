@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { LearningComponent } from './learning/learning.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'learning', component: LearningComponent },
