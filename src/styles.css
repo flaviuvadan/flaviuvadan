@@ -10,4 +10,9 @@ mat-card {
   margin: 2em;
   box-shadow: 1px 1px 1px 1px darkgrey;
   max-width: 400px;
+  min-width: 300px;
+}
+
+.mat-figure {
+  display: inline !important;
 }

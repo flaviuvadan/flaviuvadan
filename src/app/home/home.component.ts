@@ -20,18 +20,18 @@ export class HomeComponent implements OnInit {
   }
 
   onResize(event: any): void {
-    let width = window.innerWidth;
-    if (width < ONE_COLUMN_UPPER_LIMIT) {
-      this.cols = 1;
-    } else if (width < TWO_COLUMNS_UPPER_LIMIT) {
-      this.cols = 2;
-    } else {
-      this.cols = 3;
-    }
+    this.cols = this.getBreakpoint();
   }
 
   private getBreakpoint(): number {
-    return 1;
+    const width = window.innerWidth;
+    if (width < ONE_COLUMN_UPPER_LIMIT) {
+      return 1;
+    } else if (width < TWO_COLUMNS_UPPER_LIMIT) {
+      return 2;
+    } else {
+      return 3;
+    }
   }
 
 }
