@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { LearningComponent } from './learning/learning.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BlogComponent } from './blog/blog.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    LearningComponent
   ],
   imports: [
     BrowserModule,
