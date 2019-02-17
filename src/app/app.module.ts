@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
+  MatCardModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -27,6 +28,7 @@ import { LearningComponent } from './learning/learning.component';
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
