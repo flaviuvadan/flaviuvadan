@@ -4,6 +4,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatGridListModule,
+  MatMenuModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -31,6 +32,7 @@ import { LearningComponent } from './learning/learning.component';
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
