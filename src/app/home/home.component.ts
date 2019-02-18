@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-const ONE_COLUMN_UPPER_LIMIT = 900;
-const TWO_COLUMNS_UPPER_LIMIT = 1700;
+import {
+  ONE_COLUMN_UPPER_LIMIT,
+  TWO_COLUMNS_UPPER_LIMIT,
+  COLUMNS_DEFAULT
+} from '../constants';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +13,7 @@ const TWO_COLUMNS_UPPER_LIMIT = 1700;
 })
 export class HomeComponent implements OnInit {
 
-  cols = 3;
+  cols = COLUMNS_DEFAULT;
 
   constructor() {
   }
@@ -33,5 +36,4 @@ export class HomeComponent implements OnInit {
       return 3;
     }
   }
-
 }
