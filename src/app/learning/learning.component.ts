@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ListItem } from './interface';
-
-import {
-  ONE_COLUMN_UPPER_LIMIT,
-  TWO_COLUMNS_UPPER_LIMIT,
-  COLUMNS_DEFAULT
-} from '../constants';
+import { Constants } from '../constants';
 
 @Component({
   selector: 'app-learning',
@@ -15,7 +10,7 @@ import {
 })
 export class LearningComponent implements OnInit {
 
-  cols = COLUMNS_DEFAULT;
+  cols = Constants.COLUMNS_DEFAULT;
   books: ListItem[] = [];
   audioBooks: ListItem[] = [];
   podcasts: ListItem[] = [];
@@ -434,14 +429,15 @@ export class LearningComponent implements OnInit {
   }
 
   onResize(event: any): void {
+    console.log(`on resize called with e: ${JSON.stringify(event)}`);
     this.cols = this.getBreakpoint();
   }
 
   private getBreakpoint(): number {
     const width = window.innerWidth;
-    if (width < ONE_COLUMN_UPPER_LIMIT) {
+    if (width < Constants.ONE_COLUMN_UPPER_LIMIT) {
       return 1;
-    } else if (width < TWO_COLUMNS_UPPER_LIMIT) {
+    } else if (width < Constants.TWO_COLUMNS_UPPER_LIMIT) {
       return 2;
     } else {
       return 3;
