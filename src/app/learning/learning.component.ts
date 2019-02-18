@@ -10,6 +10,7 @@ import { Constants } from '../constants';
 })
 export class LearningComponent implements OnInit {
 
+  charactersLimit = Constants.CHARACTERS_DISPLAY;
   cols = Constants.COLUMNS_DEFAULT;
   books: ListItem[] = [];
   audioBooks: ListItem[] = [];
@@ -429,15 +430,14 @@ export class LearningComponent implements OnInit {
   }
 
   onResize(event: any): void {
-    console.log(`on resize called with e: ${JSON.stringify(event)}`);
     this.cols = this.getBreakpoint();
   }
 
   private getBreakpoint(): number {
     const width = window.innerWidth;
-    if (width < Constants.ONE_COLUMN_UPPER_LIMIT) {
+    if (width < Constants.ONE_COLUMN_UPPER) {
       return 1;
-    } else if (width < Constants.TWO_COLUMNS_UPPER_LIMIT) {
+    } else if (width < Constants.TWO_COLUMNS_UPPER) {
       return 2;
     } else {
       return 3;

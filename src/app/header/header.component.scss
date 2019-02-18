@@ -17,9 +17,14 @@
   .menu {
     display: flex;
     justify-content: flex-end;
+    border-radius: 0;
 
     mat-icon {
       font-size: 30px;
     }
   }
+}
+
+.mat-menu-panel {
+  border-radius: 0;
 }

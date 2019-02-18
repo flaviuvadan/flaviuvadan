@@ -23,6 +23,6 @@ export class HeaderComponent implements OnInit {
   }
 
   private getDisplayMenu(): boolean {
-    return window.innerWidth <= Constants.HEADER_MENU_DISPLAY_LIMIT;
+    return window.innerWidth <= Constants.HEADER_MENU_DISPLAY;
   }
 }

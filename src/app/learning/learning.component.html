@@ -11,14 +11,17 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-grid-list [cols]="cols" rowHeight="650" (window:resize)="onResize($event)">
+  <mat-grid-list [cols]="cols" rowHeight="610" (window:resize)="onResize($event)">
     <mat-grid-tile>
       <mat-card>
         <mat-card-title>Books</mat-card-title>
         <mat-card-content>
           <mat-list *ngFor="let book of books">
             <mat-list-item role="listitem">
-              <a href="{{book.url}}">{{book.title}}</a>
+              <a href="{{book.url}}">
+                <span *ngIf="book.title.length <= charactersLimit; else limited">{{book.title}}</span>
+                <ng-template #limited>{{book.title.slice(0, charactersLimit)}}...</ng-template>
+              </a>
             </mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -31,7 +34,10 @@
         <mat-card-content>
           <mat-list *ngFor="let audioBook of audioBooks">
             <mat-list-item role="listitem">
-              <a href="{{audioBook.url}}">{{audioBook.title}}</a>
+              <a href="{{audioBook.url}}">
+                <span *ngIf="audioBook.title.length <= charactersLimit; else limited">{{audioBook.title}}</span>
+                <ng-template #limited>{{audioBook.title.slice(0, charactersLimit)}}...</ng-template>
+              </a>
             </mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -44,7 +50,10 @@
         <mat-card-content>
           <mat-list *ngFor="let podcast of podcasts">
             <mat-list-item role="listitem">
-              <a href="{{podcast.url}}">{{podcast.title}}</a>
+              <a href="{{podcast.url}}">
+                <span *ngIf="podcast.title.length <= charactersLimit; else limited">{{podcast.title}}</span>
+                <ng-template #limited>{{podcast.title.slice(0, charactersLimit)}}...</ng-template>
+              </a>
             </mat-list-item>
           </mat-list>
         </mat-card-content>

@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit {
 
   private getBreakpoint(): number {
     const width = window.innerWidth;
-    if (width < Constants.ONE_COLUMN_UPPER_LIMIT) {
+    if (width < Constants.ONE_COLUMN_UPPER) {
       return 1;
-    } else if (width < Constants.TWO_COLUMNS_UPPER_LIMIT) {
+    } else if (width < Constants.TWO_COLUMNS_UPPER) {
       return 2;
     } else {
       return 3;
