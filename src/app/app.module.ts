@@ -6,7 +6,9 @@ import {
   MatGridListModule,
   MatIconModule,
   MatMenuModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatExpansionModule,
+  MatListModule,
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -37,6 +39,8 @@ import { LearningComponent } from './learning/learning.component';
     MatMenuModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatExpansionModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

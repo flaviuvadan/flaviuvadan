@@ -5,8 +5,12 @@
   mat-card {
     border-radius: 0;
 
+    background-image : linear-gradient(to bottom,
+      rgba(255,255,255, 0),
+      rgba(255,255,255, 1) 90%);
+
     mat-card-title {
-      font-size: 26px;
+      font-size: 22px;
     }
   }
 
@@ -18,5 +22,11 @@
   .tile-card {
     max-width: 400px;
     min-width: 200px;
+
+    mat-card-content {
+      overflow: hidden;
+      overflow-y: auto;
+      max-height: 450px;
+    }
   }
 }
