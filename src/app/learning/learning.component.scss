@@ -15,12 +15,13 @@
     flex-direction: row;
 
     mat-card {
+      max-width: 500px;
       min-width: 200px;
 
       mat-card-content {
         overflow: hidden;
         overflow-y: auto;
-        max-height: 500px;
+        max-height: 550px;
       }
     }
   }
