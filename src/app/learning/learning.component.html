@@ -27,13 +27,27 @@
 
     <mat-grid-tile>
       <mat-card class="tile-card">
-        <mat-card-title>Audio books</mat-card-title>
+        <mat-card-title>Audio Books</mat-card-title>
+        <mat-card-content>
+          <mat-list *ngFor="let audioBook of audioBooks">
+            <mat-list-item role="listitem">
+              <a href="{{audioBook.url}}">{{audioBook.title}}</a>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
       </mat-card>
     </mat-grid-tile>
 
     <mat-grid-tile>
       <mat-card class="tile-card">
         <mat-card-title>Podcasts</mat-card-title>
+        <mat-card-content>
+          <mat-list *ngFor="let podcast of podcasts">
+            <mat-list-item role="listitem">
+              <a href="{{podcast.url}}">{{podcast.title}}</a>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

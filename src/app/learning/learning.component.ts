@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Book } from './interface';
+import { ListItem } from './interface';
 
 import {
   ONE_COLUMN_UPPER_LIMIT,
@@ -16,7 +16,9 @@ import {
 export class LearningComponent implements OnInit {
 
   cols = COLUMNS_DEFAULT;
-  books: Book[] = [];
+  books: ListItem[] = [];
+  audioBooks: ListItem[] = [];
+  podcasts: ListItem[] = [];
 
   constructor() {
     this.books = [
@@ -308,6 +310,121 @@ export class LearningComponent implements OnInit {
       {
         title: 'All of Statistics: A Concise Course in Statistical Inference',
         url: 'https://www.amazon.ca/gp/product/0387402721/ref=ppx_yo_dt_b_asin_title_o00__o00_s00?ie=UTF8&psc=1'
+      },
+    ];
+
+    this.audioBooks = [
+      {
+        title: 'How to Win Friends and Influence People',
+        url: 'https://www.audible.ca/pd/How-to-Win-Friends-and-Influence-People-A-Condensation-from-the-ListItem-Audiobook/B071DTZWPV?ref=' +
+          'a_lib_c4_libItem_1_B071DTZWPV&pf_rd_p=de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life, in Organisms, Cities,' +
+          'Economies, and Companies',
+        url: 'https://www.audible.ca/pd/Scale-Audiobook/B071RND6YD?ref=a_lib_c4_libItem_3_B071RND6YD&pf_rd_p=de1c9398-3145-4721-864a-' +
+          '7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Unshakeable: Your Financial Freedom Playbook',
+        url: 'https://www.audible.ca/pd/Unshakeable-Audiobook/B07145R3MF?ref=a_lib_c4_libItem_5_B07145R3MF&pf_rd_p=de1c9398-3145-' +
+          '4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'She Has Her Mother\'s Laugh: The Powers, Perversions, and Potential of Heredity',
+        url: 'https://www.audible.ca/pd/She-Has-Her-Mothers-Laugh-Audiobook/B07B5451NJ?ref=a_lib_c4_libItem_9_B07B5451NJ&pf_rd_p=' +
+          'de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Who We Are and How We Got Here',
+        url: 'https://www.audible.ca/pd/Who-We-Are-and-How-We-Got-Here-Audiobook/B07DNDTL94?ref=a_lib_c4_libItem_13_B07DNDTL94&pf_rd_p=' +
+          'de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'One in a Billion: The Story of Nic Volker and the Dawn of Genomic Medicine',
+        url: 'https://www.audible.ca/pd/One-in-a-Billion-Audiobook/B07193NJDH?ref=a_lib_c4_libItem_14_B07193NJDH&pf_rd_p=de1c9398-3' +
+          '145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Hood: Trailblazer of the Genomics Age',
+        url: 'https://www.audible.ca/pd/Hood-Audiobook/B0713PZ4MD?ref=a_lib_c4_libItem_15_B0713PZ4MD&pf_rd_p=de1c9398-3145-4721-864a-7daf' +
+          'b77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Our Final Invention: Artificial Intelligence and the End of the Human Era - James Barrat',
+        url: 'https://www.amazon.ca/gp/product/1250058783/ref=ppx_yo_dt_b_asin_title_o02__o00_s00?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Cosmos',
+        url: 'https://www.audible.ca/pd/Cosmos-Audiobook/B06Y2H874R?ref=a_lib_c4_libItem_17_B06Y2H874R&pf_rd_p=de1c9398-3145-4721-864a-' +
+          '7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Astrophysics for People in a Hurry',
+        url: 'https://www.audible.ca/pd/Astrophysics-for-People-in-a-Hurry-Audiobook/B06ZYJSLZ1?ref=a_lib_c4_libItem_18_B06ZYJSLZ1&pf_' +
+          'rd_p=de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+      },
+      {
+        title: 'Zero to One: Notes on Startups, or How to Build the Future',
+        url: 'https://www.audible.ca/pd/Zero-to-One-Audiobook/B072HN8BWQ?ref=a_lib_c4_libItem_0_B072HN8BWQ&pf_rd_p=de1c9398-3145-' +
+          '4721-864a-7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+      {
+        title: 'The Martian',
+        url: 'https://www.audible.ca/pd/The-Martian-Audiobook/B0719GG92D?ref=a_lib_c4_libItem_1_B0719GG92D&pf_rd_p=de1c9398-3145-4721' +
+          '-864a-7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+      {
+        title: 'New York 2140',
+        url: 'https://www.audible.ca/pd/New-York-2140-Audiobook/B07231CQQL?ref=a_lib_c4_libItem_2_B07231CQQL&pf_rd_p=de1c9398-3145-47' +
+          '21-864a-7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+      {
+        title: '1984',
+        url: 'https://www.audible.ca/pd/1984-Audiobook/B071NXT4DX?ref=a_lib_c4_libItem_3_B071NXT4DX&pf_rd_p=de1c9398-3145-4721-864a-' +
+          '7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+      {
+        title: 'Man\'s Search for Meaning',
+        url: 'https://www.audible.ca/pd/Mans-Search-for-Meaning-Audiobook/B072HR7J3H?ref=a_lib_c4_libItem_4_B072HR7J3H&pf_rd_p=de1c9' +
+          '398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+      {
+        title: 'The Wealth of Nations',
+        url: 'https://www.audible.ca/pd/The-Wealth-of-Nations-Audiobook/B072FF785J?ref=a_lib_c4_libItem_5_B072FF785J&pf_rd_p=de1c939' +
+          '8-3145-4721-864a-7dafb77b7b4e&pf_rd_r=YF4E4YPND3SKAF5BXVKE&'
+      },
+    ];
+
+    this.podcasts = [
+      { title: 'BioScience Talks', url: 'https://itunes.apple.com/ca/podcast/bioscience-talks/id1001260411?mt=2' },
+      { title: 'Orbitals', url: 'https://itunes.apple.com/ca/podcast/orbitals/id1436176408?mt=2' },
+      { title: 'Our Ludicrous Future', url: 'https://itunes.apple.com/ca/podcast/our-ludicrous-future/id1436205188?mt=2' },
+      { title: 'Purple Patch Podcast', url: 'https://itunes.apple.com/ca/podcast/purple-patch-podcast/id1330665690?mt=2' },
+      { title: 'Triathlon Taren Podcast', url: 'https://itunes.apple.com/ca/podcast/triathlon-taren-podcast/id1278341165?mt=2' },
+      { title: 'Science Magazine Podcast', url: 'https://itunes.apple.com/ca/podcast/science-magazine-podcast/id120329020?mt=2' },
+      {
+        title: 'Sean Carroll\'s Mindscape', url: 'https://itunes.apple.com/ca/podcast/sean-carrolls-mindscape-science-society-philosophy/' +
+          'id1406534739?mt=2'
+      },
+      { title: 'Playing with Science', url: 'https://itunes.apple.com/ca/podcast/playing-with-science/id1198280360?mt=2' },
+      { title: 'StarTalk All-Stars', url: 'https://itunes.apple.com/ca/podcast/startalk-all-stars/id1195159401?mt=2' },
+      { title: 'StarTalk Radio', url: 'https://itunes.apple.com/ca/podcast/startalk-radio/id325404506?mt=2' },
+      { title: 'The Joe Rogan Experience', url: 'https://itunes.apple.com/ca/podcast/the-joe-rogan-experience/id360084272?mt=2' },
+      {
+        title: 'The Knowledge Project',
+        url: 'https://itunes.apple.com/ca/podcast/the-knowledge-project-with-shane-parrish/id990149481?mt=2'
+      },
+      {
+        title: 'The Skeptics\' Guide to the Universe', url: 'https://itunes.apple.com/ca/podcast/the-skeptics-guide-to-the-universe/' +
+          'id128859062?mt=2'
+      },
+      { title: 'The Tim Ferriss Show', url: 'https://itunes.apple.com/ca/podcast/the-tim-ferriss-show/id863897795?mt=2' },
+      { title: 'The Tony Robbins Podcast', url: 'https://itunes.apple.com/ca/podcast/the-tony-robbins-podcast/id1098413063?mt=2' },
+      {
+        title: 'This Week in Machine Learning and Artificial Intelligence',
+        url: 'https://itunes.apple.com/ca/podcast/this-week-in-machine-' +
+          'learning-artificial-intelligence/id1116303051?mt=2'
       },
     ];
   }
