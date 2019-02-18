@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const MENU_DISPLAY_LIMIT = 500;
+import { Constants } from '../constants';
 
 @Component({
   selector: 'app-header',
@@ -23,6 +23,6 @@ export class HeaderComponent implements OnInit {
   }
 
   private getDisplayMenu(): boolean {
-    return window.innerWidth <= MENU_DISPLAY_LIMIT;
+    return window.innerWidth <= Constants.HEADER_MENU_DISPLAY_LIMIT;
   }
 }
