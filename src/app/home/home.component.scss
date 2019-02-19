@@ -1,24 +1,19 @@
-.container {
-  display: flex;
-  flex-direction: column;
+mat-card {
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 0;
 
-  mat-card {
-    max-width: 500px;
-    min-width: 200px;
-    border-radius: 0;
+  mat-card-title {
+    font-size: 26px;
+  }
 
-    mat-card-title {
-      font-size: 26px;
-    }
+  mat-card-subtitle {
+    font-size: 20px;
+  }
 
-    mat-card-subtitle {
-      font-size: 20px;
-    }
-
-    mat-card-content {
-      max-height: 300px;
-      overflow: hidden;
-      overflow-y: auto;
-    }
+  mat-card-content {
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
   }
 }
