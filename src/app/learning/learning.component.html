@@ -11,10 +11,11 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-grid-list [cols]="cols" rowHeight="700" (window:resize)="onResize($event)">
+  <mat-grid-list [cols]="cols" rowHeight="800" (window:resize)="onResize($event)">
     <mat-grid-tile>
       <mat-card>
         <mat-card-title>Books</mat-card-title>
+        <img mat-card-image src="../../assets/images/books.png">
         <mat-card-content>
           <mat-list *ngFor="let book of books">
             <mat-list-item role="listitem">
@@ -31,6 +32,7 @@
     <mat-grid-tile>
       <mat-card class="tile-card">
         <mat-card-title>Audio Books</mat-card-title>
+        <img mat-card-image src="../../assets/images/audiobooks.png">
         <mat-card-content>
           <mat-list *ngFor="let audioBook of audioBooks">
             <mat-list-item role="listitem">
@@ -47,6 +49,7 @@
     <mat-grid-tile>
       <mat-card class="tile-card">
         <mat-card-title>Podcasts</mat-card-title>
+        <img mat-card-image src="../../assets/images/podcasts.png">
         <mat-card-content>
           <mat-list *ngFor="let podcast of podcasts">
             <mat-list-item role="listitem">
