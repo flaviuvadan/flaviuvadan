@@ -31,14 +31,14 @@
 
     <mat-grid-tile>
       <mat-card class="tile-card">
-        <mat-card-title>Audio Books</mat-card-title>
-        <img mat-card-image src="../../assets/images/audiobooks.png">
+        <mat-card-title>Podcasts</mat-card-title>
+        <img mat-card-image src="../../assets/images/podcasts.png">
         <mat-card-content>
-          <mat-list *ngFor="let audioBook of audioBooks">
+          <mat-list *ngFor="let podcast of podcasts">
             <mat-list-item role="listitem">
-              <a href="{{audioBook.url}}">
-                <span *ngIf="audioBook.title.length <= charactersLimit; else limited">{{audioBook.title}}</span>
-                <ng-template #limited>{{audioBook.title.slice(0, charactersLimit)}}...</ng-template>
+              <a href="{{podcast.url}}">
+                <span *ngIf="podcast.title.length <= charactersLimit; else limited">{{podcast.title}}</span>
+                <ng-template #limited>{{podcast.title.slice(0, charactersLimit)}}...</ng-template>
               </a>
             </mat-list-item>
           </mat-list>
@@ -48,14 +48,14 @@
 
     <mat-grid-tile>
       <mat-card class="tile-card">
-        <mat-card-title>Podcasts</mat-card-title>
-        <img mat-card-image src="../../assets/images/podcasts.png">
+        <mat-card-title>Audio Books</mat-card-title>
+        <img mat-card-image src="../../assets/images/audiobooks.png">
         <mat-card-content>
-          <mat-list *ngFor="let podcast of podcasts">
+          <mat-list *ngFor="let audioBook of audioBooks">
             <mat-list-item role="listitem">
-              <a href="{{podcast.url}}">
-                <span *ngIf="podcast.title.length <= charactersLimit; else limited">{{podcast.title}}</span>
-                <ng-template #limited>{{podcast.title.slice(0, charactersLimit)}}...</ng-template>
+              <a href="{{audioBook.url}}">
+                <span *ngIf="audioBook.title.length <= charactersLimit; else limited">{{audioBook.title}}</span>
+                <ng-template #limited>{{audioBook.title.slice(0, charactersLimit)}}...</ng-template>
               </a>
             </mat-list-item>
           </mat-list>
