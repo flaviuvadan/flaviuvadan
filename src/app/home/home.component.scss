@@ -2,6 +2,8 @@ mat-card {
   max-width: 500px;
   min-width: 200px;
   border-radius: 0;
+  overflow: hidden;
+  overflow-y: scroll;
 
   mat-card-title {
     font-size: 26px;
@@ -15,5 +17,16 @@ mat-card {
     max-height: 300px;
     overflow: hidden;
     overflow-y: auto;
+  }
+
+  mat-card-footer {
+    font-size: 14px;
+    padding: 0 16px 0 0;
+    color: darkgrey;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

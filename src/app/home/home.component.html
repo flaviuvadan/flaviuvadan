@@ -1,4 +1,4 @@
-<mat-grid-list [cols]="cols" rowHeight="850" (window:resize)="onResize($event)">
+<mat-grid-list [cols]="cols" rowHeight="880" (window:resize)="onResize($event)">
   <mat-grid-tile>
     <mat-card>
       <mat-card-title>Life</mat-card-title>
@@ -16,6 +16,35 @@
         biking my whole life, discovered running is fun and thought "Might as well try swimming...". I was hooked ever
         since and have taken up triathlon as part of my life as well.
       </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Education</mat-card-title>
+      <mat-card-subtitle>Some direction</mat-card-subtitle>
+      <img mat-card-image src="../../assets/images/education.jpg">
+      <mat-card-content>
+        I started studying at the University of Saskatchewan in 2014. I initially wanted to pursue Computer
+        Engineering but, due to the differences between the educational systems of Romania and Canada, I was not able
+        to apply directly to enter the College of Engineering at the University of Saskatchewan. Due to this event, I
+        had to take an additional year, with a reduced course load, to establish some academic history in SK. Once that
+        year passed, I started studying Computer Science. Studying Computer Science is filled with fun and challenges
+        and the way it makes one think (in algorithms) can be a life-changing experience. In my third year I took a
+        science elective that changed my course again. I took Organic Chemistry and I was impressed by how specific
+        chemical interactions can be. I did not want to give up Computer Science and I did not want to pursue Chemistry
+        exclusively - I took up Bioinformatics.
+      </mat-card-content>
+      <mat-card-footer>
+        <ul>
+          <li>University of Saskatchewan</li>
+          <ul>
+            <li>
+              <div><span>Bachelor of Science - Bioinformatics</span><span>09/14 - 04/20</span></div>
+            </li>
+          </ul>
+        </ul>
+      </mat-card-footer>
     </mat-card>
   </mat-grid-tile>
 
@@ -43,25 +72,34 @@
         was using a motif finder of choice and attempt to improve its results by pre-processing analyzed genes to fit
         them in topologically-associated domains (the interacting chromosomes' regions).
       </mat-card-content>
-    </mat-card>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card>
-      <mat-card-title>Education</mat-card-title>
-      <mat-card-subtitle>Some direction</mat-card-subtitle>
-      <img mat-card-image src="../../assets/images/education.jpg">
-      <mat-card-content>
-        I started studying at the University of Saskatchewan in 2014. I initially wanted to pursue Computer
-        Engineering but, due to the differences between the educational systems of Romania and Canada, I was not able
-        to apply directly to enter the College of Engineering at the University of Saskatchewan. Due to this event, I
-        had to take an additional year, with a reduced course load, to establish some academic history in SK. Once that
-        year passed, I started studying Computer Science. Studying Computer Science is filled with fun and challenges
-        and the way it makes one think (in algorithms) can be a life-changing experience. In my third year I took a
-        science elective that changed my course again. I took Organic Chemistry and I was impressed by how specific
-        chemical interactions can be. I did not want to give up Computer Science and I did not want to pursue Chemistry
-        exclusively - I took up Bioinformatics.
-      </mat-card-content>
+      <mat-card-footer>
+        <ul>
+          <li>University of Saskatchewan</li>
+          <ul>
+            <li>
+              <div><span>Student Peer Advisor</span><span>5/15 - 9/16</span></div>
+            </li>
+            <li>
+              <div><span>Research Assistant</span><span>5/16 - 8/16</span></div>
+            </li>
+            <li>
+              <div><span>Student Assistant - Marking (Mathematics)</span><span>9/16 - 4/17</span></div>
+            </li>
+            <li>
+              <div><span>Research Assistant</span><span>5/17 - 8/17</span></div>
+            </li>
+            <li>
+              <div><span>Tutorial Leader - Bioinformatics</span><span>9/17 - 4/18</span></div>
+            </li>
+          </ul>
+          <li>Vendasta</li>
+          <ul>
+            <li>
+              <div><span>Software Developer Intern</span><span>5/18 - pres.</span></div>
+            </li>
+          </ul>
+        </ul>
+      </mat-card-footer>
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
