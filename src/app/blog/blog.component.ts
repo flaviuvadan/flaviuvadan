@@ -18,15 +18,7 @@ export class BlogComponent implements OnInit {
         {
           name: 'Yet Another Personal Blog',
           posted: '02/19.0',
-        },
-        {
-          name: 'Yet Another Personal Blog',
-          posted: '02/19.0',
-        },
-        {
-          name: 'Yet Another Personal Blog',
-          posted: '02/19.0',
-        },
+        }
       ],
     }
   ];
