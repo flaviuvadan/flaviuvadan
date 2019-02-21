@@ -9,6 +9,7 @@ import {
   MatToolbarModule,
   MatExpansionModule,
   MatListModule,
+  MatTreeModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -41,6 +42,7 @@ import { LearningComponent } from './learning/learning.component';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatListModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
