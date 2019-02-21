@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { LearningComponent } from './learning/learning.component';
+import { BlogPostComponent } from './blog/blog-post/blog-post.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LearningComponent } from './learning/learning.component';
     FooterComponent,
     HomeComponent,
     BlogComponent,
-    LearningComponent
+    LearningComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,
