@@ -1,7 +1,4 @@
-.desktop-content {
-  display: flex;
-  flex-direction: row;
-
+.common {
   mat-tree {
     border-radius: 0;
     margin: 1em;
@@ -10,34 +7,29 @@
       0 1px 1px 0 rgba(0, 0, 0, .14),
       0 1px 3px 0 rgba(0, 0, 0, .12);
     min-width: 250px;
-    max-width: 500px;
     height: 100%;
   }
 
   mat-card {
     border-radius: 0;
-    width: 100%;
     margin: 1em;
   }
 }
 
-.mobile-content {
-  display: flex;
-  flex-direction: column;
+.desktop-content {
+  @extend .common;
 
-  mat-tree {
-    border-radius: 0;
-    margin: 1em;
-    box-shadow:
-      0 2px 1px -1px rgba(0, 0, 0, .2),
-      0 1px 1px 0 rgba(0, 0, 0, .14),
-      0 1px 3px 0 rgba(0, 0, 0, .12);
-    min-width: 250px;
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: row;
 
   mat-card {
-    border-radius: 0;
-    margin: 1em;
+    width: 100%;
   }
+}
+
+.mobile-content {
+  @extend .common;
+
+  display: flex;
+  flex-direction: column;
 }
