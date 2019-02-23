@@ -12,21 +12,16 @@
 
   mat-grid-list {
     display: flex;
-    flex-direction: row;
 
     mat-card {
       min-width: 200px;
       max-width: 500px;
       height: 700px;
-
-      mat-card-content {
-        max-height: 50%;
-        overflow: hidden;
-        overflow-y: auto;
-      }
+      overflow: hidden;
+      overflow-y: scroll;
 
       mat-list-item {
-        height: 30px;
+        height: 40px;
       }
     }
   }
