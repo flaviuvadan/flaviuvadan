@@ -16,10 +16,11 @@
 
     mat-card {
       min-width: 200px;
-      max-height: 700px;
+      max-width: 500px;
+      height: 700px;
 
       mat-card-content {
-        height: 350px;
+        max-height: 50%;
         overflow: hidden;
         overflow-y: auto;
       }
