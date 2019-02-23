@@ -6,6 +6,6 @@ export interface BlogNode {
 
 export interface FlatBlogNode {
   expandable: boolean;
-  title: string;
+  name: string;
   level: number;
 }

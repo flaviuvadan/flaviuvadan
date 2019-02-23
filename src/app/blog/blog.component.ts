@@ -27,15 +27,17 @@ export class BlogComponent implements OnInit {
   treeFlattener: MatTreeFlattener<any, any>;
   dataSource: MatTreeFlatDataSource<any, any>;
 
-  private transformer = (node: BlogNode, level: number) => {
+  transformer(node: BlogNode, level: number): FlatBlogNode {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,
       level: level,
     };
-  };
+  }
 
-  hasChild = (_: number, node: FlatBlogNode) => node.expandable;
+  hasChild(_: number, node: FlatBlogNode) {
+    return node.expandable;
+  }
 
   constructor() {
     this.treeControl = new FlatTreeControl<FlatBlogNode>(
