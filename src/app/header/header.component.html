@@ -1,5 +1,5 @@
 <mat-toolbar role="heading" class="header" (window:resize)="onResize($event)">
-  <a><img src="../../assets/images/logo.png" class="logo"></a>
+  <a routerLink="/"><img src="../../assets/images/logo.png" class="logo"></a>
   <ng-container *ngIf="!displayMenu; else menu">
     <div>
       <button mat-button routerLink="/home">Home</button>
