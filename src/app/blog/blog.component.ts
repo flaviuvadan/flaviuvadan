@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogNode, FlatBlogNode } from './interface';
 import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material';
+import { BlogNode, FlatBlogNode } from './interface';
+import { Constants } from '../constants';
 
 @Component({
   selector: 'app-blog',
@@ -23,9 +24,22 @@ export class BlogComponent implements OnInit {
     }
   ];
 
+  mobileView: boolean;
   treeControl: FlatTreeControl<FlatBlogNode>;
   treeFlattener: MatTreeFlattener<any, any>;
   dataSource: MatTreeFlatDataSource<any, any>;
+
+  constructor() {
+    this.mobileView = false;
+    this.treeControl = new FlatTreeControl<FlatBlogNode>(
+      node => node.level, node => node.expandable);
+
+    this.treeFlattener = new MatTreeFlattener(
+      this.transformer, node => node.level, node => node.expandable, node => node.children);
+
+    this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+    this.dataSource.data = this.TREE_DATA;
+  }
 
   transformer(node: BlogNode, level: number): FlatBlogNode {
     return {
@@ -39,17 +53,15 @@ export class BlogComponent implements OnInit {
     return node.expandable;
   }
 
-  constructor() {
-    this.treeControl = new FlatTreeControl<FlatBlogNode>(
-      node => node.level, node => node.expandable);
-
-    this.treeFlattener = new MatTreeFlattener(
-      this.transformer, node => node.level, node => node.expandable, node => node.children);
-
-    this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
-    this.dataSource.data = this.TREE_DATA;
+  ngOnInit() {
+    this.mobileView = this.isMobileView();
   }
 
-  ngOnInit() {
+  onResize(event: any) {
+    this.mobileView = this.isMobileView();
+  }
+
+  isMobileView(): boolean {
+    return window.innerWidth <= Constants.BLOG_MOBILE_VIEW;
   }
 }
