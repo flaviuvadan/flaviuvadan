@@ -307,13 +307,46 @@ export class LearningComponent implements OnInit {
         title: 'All of Statistics: A Concise Course in Statistical Inference',
         url: 'https://www.amazon.ca/gp/product/0387402721/ref=ppx_yo_dt_b_asin_title_o00__o00_s00?ie=UTF8&psc=1'
       },
+      {
+        title: 'The Skeptics\' Guide to the Universe: How to Know What\'s Really Real in a World Increasingly Full of Fake',
+        url: 'https://www.amazon.ca/gp/product/1538760533/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Pale Blue Dot: A Vision of the Human Future in Space',
+        url: 'https://www.amazon.ca/gp/product/0345376595/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Brief Answers to the Big Questions',
+        url: 'https://www.amazon.ca/gp/product/1984819194/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Sapiens: A Brief History of Humankind',
+        url: 'https://www.amazon.ca/gp/product/0771038518/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Between Hope and Fear: A History of Vaccines and Human Immunity',
+        url: 'https://www.amazon.ca/gp/product/1681777517/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1'
+      },
+      {
+        title: 'Michael Crichton: Three Complete Novels: The Andromeda Strain; The Terminal Man; The Great Train Robbery',
+        url: 'https://www.amazon.ca/gp/product/0517084791/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1'
+      },
+      {
+        title: 'The Gene: An Intimate History',
+        url: 'https://www.amazon.ca/gp/product/1476733503/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1'
+      },
+      { title: 'The War of the Worlds', url: 'https://www.amazon.ca/gp/product/0486295060/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1' },
+      {
+        title: 'New Thinking: From Einstein to Artificial Intelligence, the Science and Technology that Transformed Our World',
+        url: 'https://www.amazon.ca/gp/product/1633537501/ref=ppx_od_dt_b_asin_title_s01?ie=UTF8&psc=1'
+      },
     ];
 
     this.audioBooks = [
       {
         title: 'How to Win Friends and Influence People',
-        url: 'https://www.audible.ca/pd/How-to-Win-Friends-and-Influence-People-A-Condensation-from-the-ListItem-Audiobook/B071DTZWPV?ref=' +
-          'a_lib_c4_libItem_1_B071DTZWPV&pf_rd_p=de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
+        url: 'https://www.audible.ca/pd/How-to-Win-Friends-and-Influence-People-A-Condensation-from-the-ListItem-Audiobook/B071DTZWPV?' +
+          'ref=a_lib_c4_libItem_1_B071DTZWPV&pf_rd_p=de1c9398-3145-4721-864a-7dafb77b7b4e&pf_rd_r=BKSS2FAG210GC4KRDZP3&'
       },
       {
         title: 'Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life, in Organisms, Cities,' +
