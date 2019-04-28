@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { LearningComponent } from './learning/learning.component';
 import { BlogPostComponent } from './blog/blog-post/blog-post.component';
@@ -27,7 +27,7 @@ import { BlogPostComponent } from './blog/blog-post/blog-post.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    AboutComponent,
     BlogComponent,
     LearningComponent,
     BlogPostComponent

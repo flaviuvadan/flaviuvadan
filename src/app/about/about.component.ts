@@ -4,10 +4,10 @@ import { Constants } from '../constants';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   cols = Constants.COLUMNS_DEFAULT;
 
