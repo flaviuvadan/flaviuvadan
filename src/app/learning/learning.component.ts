@@ -426,6 +426,7 @@ export class LearningComponent implements OnInit {
     ];
 
     this.podcasts = [
+      { title: 'The Illumina Genomics Podcast', url: 'https://www.illumina.com/science/genomics-podcast.html' },
       { title: 'BioScience Talks', url: 'https://itunes.apple.com/ca/podcast/bioscience-talks/id1001260411?mt=2' },
       { title: 'Orbitals', url: 'https://itunes.apple.com/ca/podcast/orbitals/id1436176408?mt=2' },
       { title: 'Our Ludicrous Future', url: 'https://itunes.apple.com/ca/podcast/our-ludicrous-future/id1436205188?mt=2' },
